@@ -1,6 +1,32 @@
+body {
+  background-color: palegoldenrod;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 60px 0;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
 h1 {
   text-align: center;
-  color: blueviolet;
+  font-size: 38px;
 }
 
 footer {
