@@ -1,5 +1,5 @@
 body {
-  background-color: #ffe44d;
+  background-color: #a0b5cf;
   font-family: sans-serif;
 }
 
@@ -17,7 +17,7 @@ body {
   margin: 20px 0;
   justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  border-bottom: 1px dashed #a28699;
 }
 
 .city:last-child {
@@ -27,6 +27,7 @@ body {
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
+  color: #243357;
 }
 
 .date {
@@ -36,11 +37,7 @@ h2 {
 .time {
   font-size: 50px;
   font-weight: bold;
-}
-
-.time small {
-  font-size: 16px;
-  vertical-align: middle;
+  color: #243357;
 }
 
 select {
@@ -52,11 +49,16 @@ select {
 
 h1 {
   text-align: center;
-  font-size: 38px;
+  font-size: 44px;
+  color: #243357;
 }
 
 footer {
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.selector {
+  border-color: #a28699;
 }

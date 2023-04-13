@@ -6,7 +6,7 @@ setInterval(function () {
   let londonTime = moment().tz("Europe/London");
 
   londonDateElement.innerHTML = moment().format("dddd MMMM Do");
-  londonTimeElement.innerHTML = `${londonTime.format("H:mm:ss")}`;
+  londonTimeElement.innerHTML = `${londonTime.format("HH:mm:ss")}`;
 
   //ibiza
   let ibizaElement = document.querySelector("#ibiza");
@@ -15,7 +15,7 @@ setInterval(function () {
   let ibizaTime = moment().tz("Europe/Madrid");
 
   ibizaDateElement.innerHTML = moment().format("dddd MMMM Do");
-  ibizaTimeElement.innerHTML = `${ibizaTime.format("H:mm:ss")}`;
+  ibizaTimeElement.innerHTML = `${ibizaTime.format("HH:mm:ss")}`;
 
   //new york
   let newYorkElement = document.querySelector("#new-york");
@@ -24,7 +24,7 @@ setInterval(function () {
   let newYorkTime = moment().tz("America/New_York");
 
   newYorkDateElement.innerHTML = moment().format("dddd MMMM Do");
-  newYorkTimeElement.innerHTML = `${newYorkTime.format("H:mm:ss")}`;
+  newYorkTimeElement.innerHTML = `${newYorkTime.format("HH:mm:ss")}`;
 
   //brisbane
   let brisbaneElement = document.querySelector("#brisbane");
@@ -33,5 +33,5 @@ setInterval(function () {
   let brisbaneTime = moment().tz("Australia/Brisbane");
 
   brisbaneDateElement.innerHTML = moment().format("dddd MMMM Do");
-  brisbaneTimeElement.innerHTML = `${brisbaneTime.format("H:mm:ss")}`;
+  brisbaneTimeElement.innerHTML = `${brisbaneTime.format("HH:mm:ss")}`;
 }, 1000);
