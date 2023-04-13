@@ -1,5 +1,6 @@
 body {
   background-color: palegoldenrod;
+  font-family: sans-serif;
 }
 
 .container {
@@ -14,7 +15,33 @@ body {
 
 .city {
   display: flex;
+  margin: 20px 0;
   justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+.date {
+  opacity: 0.5;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 16px;
+  vertical-align: middle;
 }
 
 select {
