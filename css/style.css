@@ -1,16 +1,15 @@
 body {
-  background-color: palegoldenrod;
+  background-color: #ffe44d;
   font-family: sans-serif;
 }
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
-  background-color: whitesmoke;
+  margin: 60px auto;
+  background-color: #e7e7e7;
   padding: 30px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  margin: 60px 0;
 }
 
 .city {
@@ -58,4 +57,6 @@ h1 {
 
 footer {
   text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
 }
