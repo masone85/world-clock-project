@@ -1,4 +1,4 @@
-setInterval(function () {
+function updateTime() {
   //london
   let londonElement = document.querySelector("#london");
   let londonDateElement = londonElement.querySelector(".date");
@@ -34,4 +34,27 @@ setInterval(function () {
 
   brisbaneDateElement.innerHTML = moment().format("dddd MMMM Do");
   brisbaneTimeElement.innerHTML = `${brisbaneTime.format("HH:mm:ss")}`;
-}, 1000);
+}
+
+function updateCity(event) {
+  let locationTimeZone = event.target.value;
+  let locationName = locationTimeZone.replace("").split("/")[1];
+  let locationTime = moment().tz(locationTimeZone);
+  let locationsElement = document.querySelector("#locations");
+  locationsElement.innerHTML = `
+  <div class="city">
+          <div>
+            <h2>${locationName}</h2>
+            <div class="date">${locationTime.format("dddd MMMM Do")}</div>
+          </div>
+          <div class="time">${locationTime.format("HH:mm:ss")}</div>
+        </div>
+        `;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
+let locationsSelectElement = document.querySelector("#location");
+
+locationsSelectElement.addEventListener("change", updateCity);
